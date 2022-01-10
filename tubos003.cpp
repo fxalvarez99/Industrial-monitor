@@ -512,8 +512,9 @@ void setVelocidadDigEMR() {		//Rele electromecanico, CHANGE. (Hago control de re
 
 
 
-/* Para convertir a .ino
-void setup() {
+
+void main() {
+	
 	pinMode(4, OUTPUT);
 	digitalWrite(4, HIGH);//Desactivar la Micro SD, es incompatible con ethernet
 	Ethernet.begin(mac, myIP, gate, gate, subRed);
@@ -528,9 +529,9 @@ void setup() {
 		pulsoPieza = true;
 	if (m.velocidadDigValue() == LOW)
 		pulso = true;
-}   
 
-void loop() {
+
+while(true) {
 		
 		c.recibirConexion();      //Lee paquete y asigna ip del remitente
 
@@ -572,6 +573,7 @@ void loop() {
 			}
 
 		}
+	}
 }
 */
 /*____________________________________________________________________________________________*/
