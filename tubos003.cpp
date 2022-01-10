@@ -1,7 +1,7 @@
 
 #include <math.h>
 #include <SPI.h>        
-#include <Ethernet2.h>  // para el shield Ethernet shield 2
+#include <Ethernet2.h>  
 #include <EthernetUdp2.h> 
 
 
